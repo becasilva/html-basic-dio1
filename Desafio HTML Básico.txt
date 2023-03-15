@@ -1,0 +1,7 @@
+Desafio HTML Básico:
+
+1. Pegar todo o conteúdo aprendido no curso e explicar com minhas palavras, como se ensinando alguém (como em blogs e matérias)
+2. Fazendo um índice por aula com link até o artigo com título (Hs)
+3. Colocar um botão voltar para retornar ao índice.
+4. Com linhas separadoras
+5. Link chamado "Referências" com links à canais do YouTube que falem do conteúdo aprendido
