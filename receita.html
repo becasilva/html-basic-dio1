@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receita</title>
+</head>
+<body>
+    <!--Atalho para selecionar muitas palavras iguais: Ctrl + d após selecionar uma palavra!-->
+    <h1>Finalizando pedido</h1>
+    <hr />
+    <h2>Deseja adicionar algo?</h2>
+    <form method="post">
+        <input type="checkbox" name="opcional[]" value="mussarela"/> <label>+ Queijo mussarela</label> <br />
+        <input type="checkbox" name="opcional[]" value="catupery"/> <label>+ Queijo catupery</label> <br />
+        <input type="checkbox" name="opcional[]" value="Calabresa"/> <label>+ Calabresa</label> <br />
+        <input type="checkbox" disabled name="opcional[]" value="Pimenta"/> <label>+ Pimenta</label> <br />
+        <p> <font color="red">OBS:</font> <font color="grey">É importante colocar os colchetes [] para avisar ao servidor, que é um Array, uma lista com múltiplos valores.</font></p>
+        <p><font color="grey">Disabled é um atributo que inabilita uma opção.</font></p>
+    <h3>Borda recheada?</h3>
+        <input type="radio" name="yn" value="Sim"/> <label>Sim</label> <br />
+        <input type="radio" name="yn" value="Não"/> <label>Não</label> <br />
+    <h3>Qual será o refrigerante? (Obrigatório!)*</h3>
+        <input type="radio" name="drink" value="coca"/> <label>Coca-cola 2L</label> <br />
+        <input type="radio" name="drink" value="geraldo"/> <label>São Geraldo 2L</label> <br />
+        <input type="radio" name="drink" value="fantauva"/> <label>Fanta Uva 2L</label> <br />
+        <input type="radio" name="drink" value="guarana"/> <label>Guaraná Antártica 2L</label> <br />
+        <br />
+        <button type="button">Botão clicável</button>
+        <p><font color="grey">type="button" é basicamente apenas um butão onde você pode adicionar
+            algumas verificações.</font>
+        </p>
+        <button type="reset">Limpar campos</button>
+        <p><font color="grey">O type="reset" irá basicamente limpar os campo do formulário que ele
+            está dentro.</font>
+        </p>
+        <button type="submit">Enviar pedido</button>
+        <p><font color="grey">O botão type="submit" envia os dados.</font></p>
+    </form>
+</body>
+</html>
