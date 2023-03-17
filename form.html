@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <form name="signup" onsubmit="alert('Sucesso!')" autocomplete="on" target="_blank" method="post" action="#">
+        Formulário
+        Nome: <input type="text" name="name" /> <br />
+        Idade: <input type="number" name="age" /><br />
+        Senha: <input type="password" name="password" /><br />
+        <button type="submit">Enviar</button>
+    </form>
+    <div id="definicoes">
+        <h2>Sobre formulários:</h2>
+            <p>Metódo de envio de dados:</p>
+            <p>- Metódo GET é inseguro, pois exibe informações, inclusive senhas, na URL.<br />
+                - Método POST envia uma requisição ao servidor, de maneira a escapsular os dados.</p>
+            <p><strong>Método POST é bem mais seguro!</strong></p>
+        <h3>Target</h3>
+            <p>Onde abrir o documento linkado. Por ex, se será aberto na mesma página ou em uma nova guia.</p>
+            <ul>
+                <li>_blank: Para abrir em uma nova aba.</li>
+                <li>_self: Para abrir na mesma aba. (Em si mesma) [Padrão]</li>
+            </ul>
+        <h3>Autocomplete</h3>
+        <p>Permite salvar informações e utilizar elas novamente, se estiver como ON e não permitirá se estiver 
+            como OFF.<br /> Além de ser possível, trafegando entre abas, voltando pra o formulário, os dados 
+            permanecem.</p>
+        <h3>On: Evento</h3>
+            <p>É uma ação.</p>
+            <p>Vamos usar muito o "onsubmit", utilizando JavaScript.<br />
+            Ou seja, que ação será realizada ao apertar o botão de enviar.</p>
+            <p>É muito usado para verificação e validação!</p>
+            <p><font color="red">EX: Se a idade é válida.</font></p>
+    </div>
+    
+    <div id="input">
+        <h2>Input</h2>
+        <p>Definição: Caixa de preenchimento de valores.</p>
+        <form>
+            <label>Input type="text"</label><input type="text" /> <br />
+            <label>Input type="number"</label><input type="number" step="10" min="0" max="115" />
+            <p>→ Pode-se utilizar min="valor" e max="valor" para definir um valor mínimo e máximo possível. <br />
+            tep="valor a ser pulado", permite pular os valores de 5 em 5 por exemplo.</p>
+            <label>Botão:</label><input type="button" value="Enviar" />
+            <p>→ Button type="button", "Reset", "Submit"</p>
+            <label>Range:</label><input type="range" value="0" />
+            <p>→ Também se usa "min=0", max="90" e value="0" como valor padrão inicial</p>
+            <label>Cor:</label><input type="color" /> <br />
+            <label>E-mail:</label><input type="email" />
+            <p>→ No input type="email", o navegador só permite enviar o form, se estiver em formato correto.</p>
+            <label>URL:</label><input type="url" />
+            <p>→ No input type="url", o navegador só permite enviar o form, se estiver em formato correto.</p>
+            <label>Data:</label><input type="date" />
+            <p>→ No input type="date", o navegador pega o idioma do sistema para formatar a data.</p>
+            <label>Semana:</label><input type="week" />
+            <p>→ No input type="week", não há compatibilidade em todos os navegadores.</p>
+            <label>Mês:</label><input type="month" /> <br />
+            <label>Checkbox:</label><input type="checkbox" /><input type="checkbox" /> <br />
+            <label>Radio:</label><input type="radio" name="radio"/><input type="radio" name="radio" /><br />
+            <p>→ Em Radio o atributo name="mesmonome" deve ser igual em todas as opções.</p>
+            <label>Hidden:</label><input type="hidden" /> <br />
+            <p>→ Valor invisível.</p>
+            <label>Escolha um arquivo:</label><input type="file" multiple /> <br />
+            <p>→ Por padrão, apenas um arquivo pode ser selecionado.</p> <br />
+            <label>Busca:</label><input type="search" /> <br />
+            <br />
+            <button>Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
